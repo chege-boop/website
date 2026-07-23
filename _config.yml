@@ -1,0 +1,9 @@
+title: Society of Marine Engineers Kenya
+description: Uniting Professionals. Driving Industry Excellence.
+baseurl: ""
+url: "https://www.somekenya.org" # Update when domain is connected
+
+# Tell Jekyll to look for the "Leadership" collection
+collections:
+  leadership:
+    output: false # We don't need a whole page for each leader, just their profile on the homepage

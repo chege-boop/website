@@ -1,0 +1,33 @@
+backend:
+  name: github
+  repo: your-ngo-account/somek-website # Nathan needs to replace this with the actual repo link later
+  branch: main
+
+media_folder: "assets/images" # Where the CMS saves uploaded photos
+public_folder: "assets/images"
+
+collections:
+  # 1. The form for adding News
+  - name: "news"
+    label: "News & Updates"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "image", widget: "image", required: false}
+      - {label: "Article Content", name: "body", widget: "markdown"}
+
+  # 2. The form for adding Core Team Members
+  - name: "leadership"
+    label: "Core Team Leaders"
+    folder: "_leadership"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "title", widget: "string"}
+      - {label: "Society Role", name: "role", widget: "string", default: "Core Team Member"}
+      - {label: "Profile Picture", name: "image", widget: "image", required: false}
+      - {label: "Bio (Optional)", name: "body", widget: "markdown", required: false}

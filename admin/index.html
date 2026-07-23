@@ -1,0 +1,255 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society of Marine Engineers Kenya (SOMEK)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        marine: { 900: '#002147', 700: '#003b73', 500: '#005b9f' },
+                        emerald: { 500: '#10b981' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-marine-500 selection:text-white">
+
+    <!-- STATIC: HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" class="flex items-center gap-3 group focus:outline-none">
+                    <div class="w-12 h-12 bg-marine-900 rounded-full flex items-center justify-center text-white font-bold shadow-md transition-transform group-hover:scale-105 active:scale-95">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>
+                    </div>
+                    <div>
+                        <h1 class="font-bold text-xl text-marine-900 leading-tight group-hover:text-marine-700 transition-colors">SOMEK</h1>
+                        <p class="text-xs text-slate-500 hidden sm:block">Society of Marine Engineers Kenya</p>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-marine-700 font-medium transition-colors active:scale-95 inline-block">About Us</a>
+                    <a href="#news" class="text-slate-600 hover:text-marine-700 font-medium transition-colors active:scale-95 inline-block">Latest News</a>
+                    <a href="#leadership" class="text-slate-600 hover:text-marine-700 font-medium transition-colors active:scale-95 inline-block">Leadership</a>
+                    <a href="#contact" class="text-slate-600 hover:text-marine-700 font-medium transition-colors active:scale-95 inline-block">Contact</a>
+                </nav>
+
+                <div class="hidden md:flex">
+                    <a href="#contact" class="bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2.5 rounded-lg font-medium transition-all shadow-sm active:scale-95">Join SOMEK</a>
+                </div>
+                
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-slate-600 hover:text-marine-900 focus:outline-none active:scale-95 transition-transform">
+                        <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+                        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7 hidden"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 absolute w-full left-0 top-20 shadow-lg origin-top transition-all">
+                <div class="px-4 pt-2 pb-6 space-y-2">
+                    <a href="#about" class="block px-3 py-2 text-slate-600 hover:text-marine-700 hover:bg-slate-50 active:bg-slate-100 font-medium rounded-md transition-colors">About Us</a>
+                    <a href="#news" class="block px-3 py-2 text-slate-600 hover:text-marine-700 hover:bg-slate-50 active:bg-slate-100 font-medium rounded-md transition-colors">Latest News</a>
+                    <a href="#leadership" class="block px-3 py-2 text-slate-600 hover:text-marine-700 hover:bg-slate-50 active:bg-slate-100 font-medium rounded-md transition-colors">Leadership</a>
+                    <a href="#contact" class="block px-3 py-2 text-slate-600 hover:text-marine-700 hover:bg-slate-50 active:bg-slate-100 font-medium rounded-md transition-colors">Contact</a>
+                    <a href="#contact" class="block mt-4 text-center bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-3 rounded-lg font-bold transition-all shadow-sm active:scale-95">Join SOMEK</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- STATIC: HERO SECTION -->
+    <section class="relative bg-marine-900 text-white py-24 lg:py-32">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="assets/images/sample-hero.jpg" alt="Ship at sea" class="w-full h-full object-cover opacity-20" onerror="this.style.display='none'" />
+            <div class="absolute inset-0 bg-gradient-to-r from-marine-900 to-transparent mix-blend-multiply"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="inline-block py-1 px-3 rounded-full bg-marine-700 text-emerald-400 text-sm font-semibold tracking-wider mb-6 border border-marine-500">
+                    Advancing Marine Engineering in Kenya
+                </span>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Uniting Professionals.<br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">Driving Industry Excellence.</span>
+                </h2>
+                <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed">
+                    SOMEK is the unified professional body for marine engineers across Kenya, dedicated to driving continuous professional development, safety, and technical innovation in the maritime sector.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#news" class="group bg-emerald-500 hover:bg-emerald-600 text-white text-center px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-emerald-500/30 flex items-center justify-center gap-2 active:scale-95">
+                        Read Latest Updates <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 transition-transform group-hover:translate-x-1"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATIC: ABOUT SECTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h3 class="text-emerald-500 font-bold tracking-wide uppercase text-sm mb-2">Who We Are</h3>
+                    <h2 class="text-3xl md:text-4xl font-bold text-marine-900 mb-6">Building a sustainable blue economy together.</h2>
+                    <p class="text-slate-600 text-lg mb-6 leading-relaxed">
+                        Through strategic partnerships with the Engineers Board of Kenya (EBK), IEK, and academic institutions like JKUAT, we advocate for our members' professional placement, certification, and career advancement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DYNAMIC: NEWS & UPDATES (Jekyll Placeholder Loop) -->
+    <section id="news" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h3 class="text-emerald-500 font-bold uppercase text-sm mb-2">Society Updates</h3>
+                <h2 class="text-3xl md:text-4xl font-bold text-marine-900 mb-4">Latest News & Initiatives</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- JEKYLL LOOP START: It creates a card for every file in the _posts folder -->
+                {% for post in site.posts %}
+                <div class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-slate-100 overflow-hidden flex flex-col">
+                    <div class="h-48 bg-marine-100 relative overflow-hidden">
+                        <img src="{{ post.image }}" alt="{{ post.title }}" class="w-full h-full object-cover" />
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-marine-900">Update</div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <span class="text-sm text-slate-500 mb-2 font-medium">{{ post.date | date: "%B %d, %Y" }}</span>
+                        <h4 class="text-xl font-bold text-marine-900 mb-3 leading-snug">{{ post.title }}</h4>
+                        <!-- Grabs the first 25 words of the article -->
+                        <p class="text-slate-600 mb-6 flex-1 text-sm">{{ post.content | strip_html | truncatewords: 25 }}</p>
+                        <a href="{{ post.url }}" class="group text-emerald-600 font-bold flex items-center gap-2 hover:text-emerald-700 transition-colors text-sm active:scale-95 w-max focus:outline-none focus:underline">
+                            Read Full Report <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 transition-transform group-hover:translate-x-1"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- JEKYLL LOOP END -->
+            </div>
+        </div>
+    </section>
+
+    <!-- DYNAMIC: LEADERSHIP & TEAM (Jekyll Placeholder Loop) -->
+    <section id="leadership" class="py-20 bg-marine-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Led by Professionals, For Professionals</h2>
+            <p class="text-marine-100 max-w-2xl mx-auto text-lg mb-12">
+                A dedicated core team meets regularly to implement society decisions and drive our on-the-ground advocacy.
+            </p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <!-- JEKYLL LOOP START: Creates a profile for every file in the _leadership folder -->
+                {% for person in site.leadership %}
+                <div class="p-4 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors">
+                    <div class="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-4 border border-emerald-500/30 overflow-hidden">
+                        {% if person.image %}
+                            <img src="{{ person.image }}" alt="{{ person.title }}" class="w-full h-full object-cover">
+                        {% else %}
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                        {% endif %}
+                    </div>
+                    <h4 class="font-bold">{{ person.title }}</h4>
+                    <p class="text-xs text-marine-200 mt-1">{{ person.role }}</p>
+                </div>
+                {% endfor %}
+                <!-- JEKYLL LOOP END -->
+            </div>
+        </div>
+    </section>
+
+    <!-- STATIC: FOOTER -->
+    <footer id="contact" class="bg-slate-950 text-slate-400 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-slate-800 pb-12 mb-8">
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-marine-500 rounded-full flex items-center justify-center text-white font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>
+                    </div>
+                    <h2 class="font-bold text-xl text-white">SOMEK</h2>
+                </div>
+                <p class="text-sm leading-relaxed mb-6">Society of Marine Engineers Kenya.<br/>Embracing joint growth and advocating for the advancement of the maritime profession.</p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#" class="inline-block hover:text-emerald-400 transition-colors active:scale-95 focus:outline-none focus:text-emerald-400">Member Registration</a></li>
+                    <li><a href="#" class="inline-block hover:text-emerald-400 transition-colors active:scale-95 focus:outline-none focus:text-emerald-400">EBK Guidelines & Mentorship</a></li>
+                    <li><a href="#" class="inline-block hover:text-emerald-400 transition-colors active:scale-95 focus:outline-none focus:text-emerald-400">Society Constitution</a></li>
+                    <li><a href="#" class="inline-block hover:text-emerald-400 transition-colors active:scale-95 focus:outline-none focus:text-emerald-400">Meeting Minutes</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-bold mb-6">Contact Us</h4>
+                <ul class="space-y-4 text-sm">
+                    <li class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-marine-500 shrink-0"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>P.O BOX 8863-00200<br/>GPO NAIROBI-KENYA</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 text-marine-500 shrink-0"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <a href="mailto:partnerships@somekenya.org" class="inline-block hover:text-white transition-colors active:scale-95">partnerships@somekenya.org</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm flex flex-col md:flex-row justify-between items-center gap-6">
+            <p>&copy; 2026 Society of Marine Engineers Kenya. All rights reserved.</p>
+            
+            <!-- Social Media Links -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://twitter.com/Somekenya254" target="_blank" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors active:scale-95 group focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 group-hover:text-[#1DA1F2] transition-colors"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                    <span>@Somekenya254</span>
+                </a>
+                <a href="https://facebook.com/SomeKenya" target="_blank" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors active:scale-95 group focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 group-hover:text-[#1877F2] transition-colors"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    <span>Some Kenya</span>
+                </a>
+                <a href="https://instagram.com/somekenya" target="_blank" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors active:scale-95 group focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 group-hover:text-[#E1306C] transition-colors"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <span>somekenya</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        const iconMenu = document.getElementById('icon-menu');
+        const iconClose = document.getElementById('icon-close');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            iconMenu.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        });
+
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                iconMenu.classList.remove('hidden');
+                iconClose.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
