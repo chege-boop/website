@@ -28,8 +28,8 @@ layout: default
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="#" class="flex items-center gap-3 group focus:outline-none">
-                    <div class="w-12 h-12 bg-marine-900 rounded-full flex items-center justify-center text-white font-bold shadow-md transition-transform group-hover:scale-105 active:scale-95">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="12" cy="5" r="3"/><line x1="12" y1="22" x2="12" y2="8"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/></svg>
+                    <div class="w-12 h-12 bg-marine-900 rounded-full flex items-center justify-center text-white font-bold shadow-md transition-transform group-hover:scale-105 active:scale-95 overflow-hidden">
+                        <img src="assets/images/new-logo.svg" alt="SOMEK Logo" class="w-full h-full object-cover">
                     </div>
                     <div>
                         <h1 class="font-bold text-xl text-marine-900 leading-tight group-hover:text-marine-700 transition-colors">SOMEK</h1>
@@ -68,12 +68,9 @@ layout: default
         </div>
     </header>
 
-    <!-- STATIC: HERO SECTION -->
+    <!-- STATIC: HERO SECTION (Solid Color Version) -->
     <section class="relative bg-marine-900 text-white py-24 lg:py-32">
-        <div class="absolute inset-0 overflow-hidden">
-            <img src="assets/images/sample-hero.jpg" alt="Ship at sea" class="w-full h-full object-cover opacity-20" onerror="this.style.display='none'" />
-            <div class="absolute inset-0 bg-gradient-to-r from-marine-900 to-transparent mix-blend-multiply"></div>
-        </div>
+        <!-- Removed the image and gradient overlay code from here -->
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl">
                 <span class="inline-block py-1 px-3 rounded-full bg-marine-700 text-emerald-400 text-sm font-semibold tracking-wider mb-6 border border-marine-500">
