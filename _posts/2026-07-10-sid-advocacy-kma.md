@@ -1,8 +1,10 @@
+---
 layout: post
 title: "Advocating for Expedited SID Issuance"
 date: 2026-07-10 14:30:00 +0300
 author: "Daniel Mwangi"
 image: "assets/images/ship-engine.jpg"
+---
 
 The SOMEK executive team is actively addressing the delays surrounding the issuance of the Seafarers Identity Document (SID).
 
