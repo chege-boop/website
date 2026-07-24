@@ -1,5 +1,5 @@
 ---
 title: "Daniel Mwangi"
 role: "Chairman"
-image: ""
+image: "assets/images/daniel_photo.png"
 ---

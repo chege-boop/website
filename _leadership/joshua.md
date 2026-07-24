@@ -1,5 +1,5 @@
 ---
 title: "Joshua Ngunyi"
 role: "Vice Chairman"
-image: "joshua-photo.jpeg"
+image: "assets/images/joshua-photo.jpeg"
 ---

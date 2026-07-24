@@ -3,7 +3,7 @@ layout: post
 title: "Welcome to the New SOMEK Website"
 date: 2026-07-23 12:00:00 +0300
 author: "SOMEK Core Team"
-image: "assets/images/ship-engine.jpg"
+image: "assets/images/new_website.jpg"
 ---
 
 Welcome to the official digital home of the Society of Marine Engineers Kenya (SOMEK). 

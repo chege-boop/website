@@ -3,7 +3,7 @@ layout: post
 title: "Highlights from the 7th EBK Engineering Convention"
 date: 2026-06-28 09:15:00 +0300
 author: "Nathan Kirimi"
-image: "assets/images/ship-engine.jpg"
+image: "assets/images/ebk_convention_nathan_danny.jpg"
 ---
 
 SOMEK was proudly represented at the 7th EBK Engineering Convention. The event provided an excellent platform to network with industry leaders and advocate for the maritime sector.

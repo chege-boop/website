@@ -1,5 +1,7 @@
----
+\---
+
 title: "Nathan Kirimi"
 role: "Treasurer"
-image: ""
+image: "assets/images/nathan\_photo.png"
 ---
+

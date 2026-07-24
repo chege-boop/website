@@ -3,7 +3,7 @@ layout: post
 title: "Launch of the EBK Mentorship Program"
 date: 2026-07-15 10:00:00 +0300
 author: "Joshua Ngunyi"
-image: "assets/images/ship-engine.jpg"
+image: "assets/images/mentorship.jpg"
 ---
 
 SOMEK is thrilled to announce a structured path for our members to transition from Graduate Engineers to Professional Engineer (PE) status. 
